@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Certificate</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        background: #e5e5e5;
+      }
+
+      .page {
+        width: 1123px; /* ~A4 landscape at 96dpi */
+        height: 794px;
+        margin: 40px auto;
+        background: #ffffff;
+        position: relative;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Outer & inner border */
+      .border-outer {
+        position: absolute;
+        inset: 18px;
+        border: 3px solid #1b4f72; /* deep blue */
+      }
+
+      .border-inner {
+        position: absolute;
+        inset: 40px;
+        border: 1px solid #c0c0c0;
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* Logo / top section */
+      .logo-area {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .logo-placeholder {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        /* border: 2px solid #1b4f72; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #1b4f72;
+      }
+
+      .certificate-title {
+        flex: 1;
+        text-align: center;
+        font-size: 28px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #1b4f72;
+      }
+
+      .subtitle {
+        margin-top: 4px;
+        font-size: 12px;
+        color: #555;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .decor-line {
+        width: 80px;
+        height: 2px;
+        background: #1b4f72;
+        margin: 18px auto;
+      }
+
+      .headline {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #444;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .name-label {
+        margin-top: 24px;
+        font-size: 13px;
+        color: #777;
+      }
+
+      .recipient-name {
+        margin-top: 6px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        padding: 6px 40px;
+        display: inline-block;
+      }
+
+      .body-text {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #555;
+        max-width: 80%;
+        line-height: 1.5;
+      }
+
+      .course-title {
+        font-weight: bold;
+        color: #1b4f72;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+
+      .details {
+        margin-top: 14px;
+        font-size: 12px;
+        color: #555;
+      }
+
+      .details span {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .footer {
+        width: 100%;
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 50px;
+      }
+
+      .sign-block {
+        width: 40%;
+        text-align: center;
+        font-size: 11px;
+        color: #444;
+      }
+
+      .sign-line {
+        width: 80%;
+        border-bottom: 1px solid #555;
+        margin: 0 auto 6px auto;
+        height: 18px;
+      }
+
+      .meta {
+        position: absolute;
+        bottom: 50px;
+        left: 60px;
+        font-size: 10px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="border-outer"></div>
+      <div class="border-inner">
+        <div class="logo-area">
+          <div class="logo-placeholder"></div>
+          <div>
+            <div class="certificate-title">CERTIFICATE OF COMPLETION</div>
+            <div class="subtitle">Presented by SANDY STITCHES</div>
+          </div>
+          <div style="width: 80px"></div>
+        </div>
+
+        <div class="decor-line"></div>
+
+        <div class="headline">THIS IS TO CERTIFY THAT</div>
+
+        <div class="name-label">Awarded to:</div>
+        <div class="recipient-name"></div>
+
+        <div class="body-text">
+          has successfully completed the program
+          <br />
+          <span class="course-title"> “FASHION DESIGNING” </span>
+          <br /><br />
+          conducted by <span>SANDY STITCHES</span> on
+          <span>______________</span> , in recognition of their dedication and
+          commitment to professional growth.
+        </div>
+
+        <div class="details">
+          Location: <span>AWKA, ANAMBRA STATE</span> &nbsp;|&nbsp; Certificate
+          ID:
+          <span>_____</span>
+        </div>
+
+        <div class="footer">
+          <div class="sign-block">
+            <div class="sign-line"></div>
+            <div>OFUELO SANDRA</div>
+            <div>CEO, SANDY STITCHES</div>
+          </div>
+          <div class="sign-block">
+            <div class="sign-line"></div>
+            <div>_______</div>
+            <div>APPRENTICE</div>
+          </div>
+        </div>
+
+        <div class="meta">Date Issued: _________________</div>
+      </div>
+    </div>
+  </body>
+</html>
